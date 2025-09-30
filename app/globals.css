@@ -1,10 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-dark: #0E0E0E;     /* Primary background (black/charcoal) */
+  --color-gray: #2B2B2B;     /* Secondary background */
+  --color-light: #F5F5F5;    /* Main text (white) */
+  --color-muted: #CCCCCC;    /* Secondary text (light gray) */
+  --color-accent: #F4B400;   /* Accent yellow */
 }
 
+html, body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  
+}
+.newsletter{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.76)),url(/company1.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+/*
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -23,4 +42,41 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+ .c-land{
+  height: auto;
+ }
+
+ @media all and (max-width: 500px){
+   .c-land{
+  height: auto;
+  margin-top: 30px;
+ }
+ }
+ .c-landimg{
+  height: 70px;
+ }
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out forwards ;
+}
+.remote-hero{
+  background-image: url("/remote11.png");
+  background-position: center;
+  background-size: cover;
+
+}
+@media all and (max-width: 500px){
+  .remote-hero{
+     background-image: url("/remote11.png");
+  }
+}
+
