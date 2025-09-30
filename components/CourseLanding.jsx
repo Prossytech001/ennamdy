@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function CourseLanding() {
+const screenshots = ["/image01.jpg", "/image02.jpg", "/image03.jpg"];
 
 const [timeLeft, setTimeLeft] = useState({});
   const targetDate = new Date().getTime() + 24 * 60 * 60 * 1000; // 24 hours from now
@@ -84,6 +85,30 @@ const [timeLeft, setTimeLeft] = useState({});
         <span className="block text-sm font-normal">(Launch Offer – Save Over 90%)</span>
       </Link>
     </section>
+    <section className="bg-[var(--color-dark)] py-20 px-6 text-center">
+      {/* Heading */}
+      <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+        🎥 Inside the{" "}
+        <span className="text-[var(--color-accent)]">Ultimate Remote Job Guide</span>
+      </h2>
+      <p className="text-[var(--color-muted)] max-w-2xl mx-auto mb-10">
+        Watch this short video where Ennamdy explains how the course works, what’s
+        inside, and how it will help you land a high-paying remote job in 60 days
+        or less.
+      </p>
+
+      {/* Video */}
+      <div className="relative w-full max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden shadow-lg border border-[var(--color-muted)]/30">
+        <iframe
+          className="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ" // 👉 Replace with your course video ID
+          title="Ultimate Remote Job Guide Explained"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </section>
 
       {/* Pain Section */}
       <section className="py-16 px-6 max-w-4xl mx-auto text-center">
@@ -112,6 +137,39 @@ const [timeLeft, setTimeLeft] = useState({});
           <li>✅ Build a skill set that makes you irresistible to employers.</li>
         </ul>
       </section>
+
+       <section className="bg-[var(--color-gray)] py-16 px-6 text-center">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-10">
+        Proof It Works <span className="text-[var(--color-accent)]">Screenshots</span>
+      </h2>
+
+      {/* Responsive Grid */}
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {screenshots.map((src, i) => (
+          <div
+            key={i}
+            className="bg-[var(--color-dark)] rounded-xl shadow-lg overflow-hidden border border-[var(--color-muted)]/30 hover:scale-105 transform transition"
+          >
+            <Image
+              src={src}
+              alt={`Evidence ${i + 1}`}
+              width={400}
+              height={250}
+              className="object-cover w-full h-86"
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Caption */}
+      <p className="mt-8 text-[var(--color-muted)] max-w-2xl mx-auto">
+        These are real results and feedback from people who used{" "}
+        <span className="text-[var(--color-accent)] font-semibold">
+          The Ultimate Remote Job Guide
+        </span>{" "}
+        to land opportunities.
+      </p>
+    </section>
 
       {/* Offer Breakdown */}
       <section className="py-20 px-6 max-w-5xl mx-auto text-center">

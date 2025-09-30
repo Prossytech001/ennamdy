@@ -39,7 +39,7 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="newsletter w-full text-[var(--color-light)] py-20">
+    <section className="newsletter w-full text-[var(--color-light)] py-20" id="newsletter">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold">
           Join Our <span className="text-[var(--color-accent)]">Newsletter</span>

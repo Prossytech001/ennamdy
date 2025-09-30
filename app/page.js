@@ -6,7 +6,7 @@ import Skills from "@/components/Skills";
 import TrustedBy from "@/components/TrustedBy";
 import Newsletter from "@/components/Newsletter";
 import Testimonials from "@/components/Testimonials";
-
+import CourseVideo from "@/components/CourseVideo";
 export default function Home() {
   return (
     <div >
@@ -15,6 +15,7 @@ export default function Home() {
         <Stats/>
         <TrustedBy/>
         <About/>
+        <CourseVideo/>
         <Skills/>
         <Testimonials/>
         <Newsletter/>

@@ -72,7 +72,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section className="relative w-full bg-[var(--color-dark)] text-[var(--color-light)] py-20">
+    <section className="relative w-full bg-[var(--color-dark)] text-[var(--color-light)] py-20" id="about">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
         
         {/* Left Side: Image */}
@@ -135,7 +135,7 @@ export default function About() {
           {/* CTA */}
           <div className="mt-8">
             <Link
-              href="/services"
+              href="/course"
               className="px-6 py-3 bg-[var(--color-accent)] text-[var(--color-dark)] font-semibold rounded-full shadow hover:opacity-90 transition"
             >
               Discover My Services

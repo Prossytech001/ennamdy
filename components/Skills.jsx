@@ -583,7 +583,7 @@ export default function Skills() {
     <section
       ref={sectionRef}
       className="bg-[var(--color-dark)] text-[var(--color-light)] w-full py-20"
-    >
+   id="course" >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold">
          Your Path to<span className="text-[var(--color-accent)]">Remote Work Freedom</span>

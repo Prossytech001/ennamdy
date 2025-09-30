@@ -126,15 +126,15 @@ export default function Navbar() {
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-10">
               <Link href="/" className="hover:text-[var(--color-accent)] transition text-[18px] font-medium">Home</Link>
-              <Link href="/services" className="hover:text-[var(--color-accent)] transition text-[18px] font-medium">Services</Link>
-              <Link href="/about" className="hover:text-[var(--color-accent)] transition text-[18px] font-medium">About</Link>
-              <Link href="/contact" className="hover:text-[var(--color-accent)] transition text-[18px] font-medium">Contact</Link>
+              <Link href="#course" className="hover:text-[var(--color-accent)] transition text-[18px] font-medium">courses</Link>
+              <Link href="#about" className="hover:text-[var(--color-accent)] transition text-[18px] font-medium">About</Link>
+              <Link href="#newsletter" className="hover:text-[var(--color-accent)] transition text-[18px] font-medium">Newsletter</Link>
             </div>
 
             {/* CTA Button */}
             <div className="hidden md:block">
               <Link
-                href="/get-started"
+                href="/course"
                 className="px-6 py-2 bg-[var(--color-accent)] text-[var(--color-dark)] font-semibold rounded-full shadow hover:opacity-90 transition"
               >
                 Get Started
@@ -176,11 +176,11 @@ export default function Navbar() {
             {/* Menu Links */}
             <nav className="mt-12 space-y-6 text-lg font-medium">
               <Link href="/" className="block hover:text-[var(--color-accent)]" onClick={() => setIsOpen(false)}>Home</Link>
-              <Link href="/services" className="block hover:text-[var(--color-accent)]" onClick={() => setIsOpen(false)}>Services</Link>
+              <Link href="#course" className="block hover:text-[var(--color-accent)]" onClick={() => setIsOpen(false)}>courses</Link>
               <Link href="/about" className="block hover:text-[var(--color-accent)]" onClick={() => setIsOpen(false)}>About</Link>
-              <Link href="/contact" className="block hover:text-[var(--color-accent)]" onClick={() => setIsOpen(false)}>Contact</Link>
+              <Link href="/newsletter" className="block hover:text-[var(--color-accent)]" onClick={() => setIsOpen(false)}>Newsletter</Link>
               <Link
-                href="/get-started"
+                href="/course"
                 className="block mt-8 px-4 py-2 bg-[var(--color-accent)] text-[var(--color-dark)] font-semibold rounded-full shadow hover:opacity-90 transition text-center"
                 onClick={() => setIsOpen(false)}
               >
